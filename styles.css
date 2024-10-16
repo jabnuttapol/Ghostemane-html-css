@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    text-align: center;
+}
+
+#header-img{
+    width: 200px;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; /* กระจายองค์ประกอบให้อยู่ซ้ายและขวา */
+    align-items: center; /* จัดให้ทุกอย่างอยู่ในแนวเดียวกัน */
+    padding-right: 20px;
+    background-color: rgb(247, 247, 247);
+    width: 100%; /* กำหนดให้ครอบคลุมทั้งหน้าจอ */
+    position: sticky;
+    top: 0; /* ติดขอบบน */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* ให้ Header อยู่เหนือองค์ประกอบอื่น */
+}
+
+nav ul {
+    display: flex; /* แสดงเมนูนำทางเป็นแถว */
+    list-style-type: none; /* ลบจุด bullet ของรายการเมนู */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px; /* เพิ่มระยะห่างระหว่างรายการเมนู */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black; /* กำหนดสีลิงก์ */
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #484848; /* เปลี่ยนสีเมื่อนำเมาส์ไปวางบนลิงก์ */
+}
+
+a{
+    text-decoration: none;
+    color: black; /* กำหนดสีลิงก์ */
+}
+
+footer{
+    display: flex;
+    justify-content: center; /* กระจายองค์ประกอบให้อยู่ซ้ายและขวา */
+    align-items: center; /* จัดให้ทุกอย่างอยู่ในแนวเดียวกัน */
+    background-color: rgb(247, 247, 247);
+    padding: 1rem;
+}
+
+#tour{
+    display: flex; /* จัดองค์ประกอบในแถวเดียวกัน */
+    justify-content: space-between; /* กระจายองค์ประกอบให้มีระยะห่างเท่ากัน */
+    align-items: center; /* จัดให้อยู่ตรงกลางแนวตั้ง */
+    padding: 5px;
+}
+
+button{
+    background-color: transparent;
+    border: 2px solid #555; /* ขอบแบบโปร่งใส */
+    color: #555;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+    color: white; /* เปลี่ยนสีเมื่อชี้เมาส์ */
+}  
+
+.input-field {
+    display: block; /* จัดให้อยู่คนละบรรทัด */
+    width: 100%; /* ทำให้ช่องใส่ข้อความกว้างเต็มบรรทัด */
+    margin-bottom: 10px; /* เพิ่มระยะห่างระหว่างองค์ประกอบ */
+    padding: 12px;
+    font-size: 16px;
+  }
+  
+  .submit-btn {
+    display: block; /* จัดให้อยู่คนละบรรทัด */
+    width: 100%;
+    padding: 12px;
+    background-color: #ebebeb;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .submit-btn:hover {
+    background-color: #555; /* เปลี่ยนสีพื้นหลังเมื่อชี้เมาส์ */
+  }
+
+  .submit-btn:active {
+    transform: scale(0.98); /* ลดขนาดเล็กน้อยเมื่อกด */
+  }
+
+.form{
+    margin: 2rem 2rem;
+    padding: 2rem;
+}
+
+section{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.video{
+    height: 90vh;
+    margin-bottom: 0;
+}
+
+main{
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    font-family: sans-serif;
+}
+
+@media (max-width: 600px){
+    #header {
+        font-size: 18px;
+
+    }
+    button {
+        width: 100%; /* ปรับปุ่มให้เต็มความกว้าง */
+        font-size: 14px; /* ลดขนาดฟอนต์ของปุ่ม */
+    }
+}
