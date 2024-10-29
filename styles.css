@@ -188,6 +188,6 @@ main{
     }
 @media (max-width: 350px){
     .hr{
-        margin-top: 6rem;
+        display: none;
     }
 }
