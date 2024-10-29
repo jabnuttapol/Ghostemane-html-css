@@ -139,3 +139,51 @@ main{
         font-size: 14px; /* ลดขนาดฟอนต์ของปุ่ม */
     }
 }
+
+@media (max-width: 1300px){
+    .video{
+        height: 80vh;
+    }
+}
+
+@media (max-width: 1150px){
+    .video{
+        height: 70vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .video{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 850px){
+    .video{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 852px){
+    .hr{
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 800px){
+    .hr{
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 575px){
+    .hr{
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 400px){
+    .hr{
+        margin-top: 5rem;
+    }
+}
