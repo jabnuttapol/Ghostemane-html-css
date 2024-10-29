@@ -186,8 +186,9 @@ main{
     .hr{
         margin-top: 5rem;
     }
+    
 @media (max-width: 350px){
     .hr{
-        display: none;
+        margin-top: 6rem;
     }
 }
